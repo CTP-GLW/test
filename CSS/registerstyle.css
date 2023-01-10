@@ -1,0 +1,150 @@
+*{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/亚运图标.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+	background-color: white;
+    /*filter: blur(10px);*/
+}
+
+/*img{
+    position: absolute;
+    height: 100%;
+    /*z-index: 1;
+    filter: blur(10px);
+}*/
+
+#main{
+    max-width: 900px;
+    margin: 0 auto;
+    /*z-index: 6;*/
+    font-family: "Microsoft Yahei";
+}
+
+td{
+    height: 52px;
+}
+
+.box1{
+    border:0px;
+    border-radius:25px;
+    background-image: linear-gradient(90deg, rgba(212, 252, 121, 0.75), rgba(150, 230, 161, 0.75));
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5) ;
+}
+
+.box2{
+    border:0px;
+    border-radius:25px;
+    background-image: linear-gradient(90deg, rgba(41, 128, 185, 0.75), rgba(109, 213, 250, 0.75));
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5) ;
+}
+
+.box3{
+    border:0px;
+    border-radius:25px;
+    background-image: linear-gradient(90deg, rgba(168, 235, 18, 0.75), rgba(0, 191, 114, 0.75), rgba(0, 77, 122, 0.75));
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5) ;
+}
+
+.box4{
+    border:0px;
+    border-radius:25px;
+    background-image: linear-gradient(90deg, rgba(33, 147, 176, 0.75), rgba(109, 213, 237, 0.75));
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5) ;
+}
+
+.inputtext{
+    width: 250px;
+    height: 25px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-left: 14px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    border: none;
+    color: #000;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5) ;
+}
+
+.inputtext:focus{
+    outline: none;
+    background-color: gainsboro;
+}
+
+textarea{
+    width: 465px;
+    height: 125px;
+    margin-bottom: 10px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-left: 14px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    border: none;
+    color: #000;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5) ;
+}
+
+textarea:focus{
+    outline: none;
+    background-color: gainsboro;
+}
+
+.btns{
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: rgb(32, 95, 184);
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5) ;
+}
+
+.btns:hover{
+    outline: none;
+    background-color: rgb(56, 117, 202);
+}
+
+.btns:active{
+    outline: none;
+    background-color: rgb(75, 148, 212);
+}
+
+.btnr{
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: white;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(32, 95, 184);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5) ;
+}
+
+.btnr:hover{
+    outline: none;
+    background-color: rgb(228, 240, 244);
+}
+
+.btnr:active{
+    outline: none;
+    background-color: lightblue;
+}

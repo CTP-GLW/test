@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" >
+	<title>登录界面</title>
+	<link rel="stylesheet" href="CSS/loginstyle.css"/>
+    <script type="text/javaScript" src="JS/logincode.js"></script>
+</head>
+<body>
+	<stection>
+        <div id="image">
+		    <!-- 背景色 -->
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class='box'>
+                <!-- 背景圆 -->
+                <div class="circle" style="--x:0"></div>
+                <div class="circle" style="--x:1"></div>
+                <div class="circle" style="--x:2"></div>
+                <div class="circle" style="--x:3"></div>
+                <div class="circle" style="--x:4"></div>
+                <!-- 登录框 -->
+                <div class='container'>
+                    <div class="from">
+                        <h2>登录</h2>
+                        <form action="loginsuccess.html" method="post" onsubmit="return Check()">
+                            <div class="inputbox">
+                                <input type="text" id="email" placeholder="邮箱" />
+                            </div>
+                            <div class="inputbox">
+                                <input type="password" id="psw" placeholder="密码" />
+                            </div>
+                            <div class="inputbox">
+                                <input type="submit" value="登录" />
+                            </div>
+                            <p class="forget">没有账号？<a href="register.html">点击注册</a></p>
+                        </form>	
+                    </div>
+                </div>
+            </div>
+        </div>
+	</stection>
+</body>
+</html>

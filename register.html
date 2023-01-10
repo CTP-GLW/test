@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>用户注册</title>
+<link href="CSS/registerstyle.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="JS/registercode.js"></script>
+</head>
+
+
+<body>
+<!--<img src="images/亚运图标.jpeg" alt="杭州亚运会"/>-->
+<div id="main">
+	<form name="form_set" action="registersuccess.html" method="post" onsubmit="return Check()">
+	<table width="850" border="0" align="center" cellpadding="15" cellspacing="0">
+		<tr>
+			<th scope="col"><span style="font-size:30px;font-weight: bolder;">用户注册</span></th>
+		</tr>
+		<tr>
+			<td>
+				<div class="box1">
+					<table width="90%" border="0" align="center" cellpadding="0" cellspacing="2">
+						<tr>
+							<td colspan="3" align="center" height="50"><span style="font-size:24px;font-weight: bold;">账户基本信息</span></td>
+						</tr>
+						<tr>
+							<td width="20%" align="right"><span style="color:red;">*</span>用户名：</td>
+							<td><input type="text" class="inputtext" name="account" id="account" size="30" placeholder="请输入您的用户名" onblur="Account_check()"/></td>
+							<td width="50%">
+								<ul id="tip1">
+								    <span style="font-size:12px;"><li>用户名由不超过10个字符组成</li></span>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%" align="right"><span style="color:red;">*</span>邮箱：</td>
+							<td><input type="text" class="inputtext" name="email" id="email" size="30" placeholder="请输入您的邮箱" onblur="Email_check()"/></td>
+							<td width="50%">
+								<ul id="tip2">
+									<span style="font-size:12px;"><li>邮箱将用于登陆账户及密码保护</li></span>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%" align="right"><span style="color:red;">*</span>密码：</td>
+							<td><input type="password" class="inputtext" name="password" id="psw" size="30" placeholder="请输入您的密码" onblur="Password_check()"/></td>
+							<td width="50%">
+								<ul id="tip3">
+								    <span style="font-size:12px;"><li>密码长度8～16位，可包含大小写字母、数字及特殊字符</li></span>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%" align="right"><span style="color:red;">*</span>确认密码：</td>
+							<td><input type="password" class="inputtext" name="re-password" id="repsw" size="30" placeholder="请再次输入您的密码" onblur="Password_recheck()"/></td>
+							<td width="50%">
+								<ul id="tip4">
+								    <span style="font-size:12px;"><li>确认密码必须与密码相同</li></span>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="box2">
+					<table width="90%" border="0" align="center" cellpadding="0" cellspacing="2">
+						<tr>
+							<td colspan="3" align="center" height="50"><span style="font-size:24px;font-weight: bold;">个人基本信息</span></td>
+						</tr>
+						<tr>
+							<td width="20%" height="50" align="right">姓名：</td>
+							<td colspan="2"><input type="text" class="inputtext" name="formal_name" size="30" placeholder="选填"/></td>
+						</tr>
+						<tr>
+							<td width="20%" height="50" align="right">性别：</td>
+							<td colspan="2">
+								<label><input type="radio" name="gender" checked/>男</label>
+								<label><input type="radio" name="gender"/>女</label>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%" height="50" align="right">出生年月：</td>
+							<td colspan="2"><input type="month" name="birthday"/></td>
+						</tr>
+						<tr>
+							<td width="20%" height="50" align="right">籍贯：</td>
+							<td><input type="text" class="inputtext" name="hometown" size="30" placeholder="选填"/></td>
+							<td width="50%">
+								<ul>
+								    <span style="font-size:12px;"><li>精确到省和市</li></span>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%" height="50" align="right">联系电话：</td>
+							<td><input type="tel" class="inputtext" name="tel" id="phone" size="30" placeholder="选填" onblur="Phone_check()"/></td>
+							<td id="tip5" width="50%"></td>
+						</tr>
+						<tr>
+							<td width="20%" height="50" align="right">职业：</td>
+							<td colspan="2">
+								<select name="occupation">
+									<option selected>请选择您的职业</option>
+									<option>事业单位/公务员/政府工作人员</option>
+									<option>专业人士（如教师、医生、律师等）</option>
+									<option>服务业者（如服务员、司机、销售员等）</option>
+									<option>工人（如工厂工人、建筑工人、环卫工人等）</option>
+									<option>从事农林牧渔业的劳动者</option>
+									<option>自由职业者（如作家、艺术家、摄影师、导游等）</option>
+									<option>公司高管</option>
+									<option>公司职员</option>
+									<option>商人</option>
+									<option>学生</option>
+									<option>家庭主妇</option>
+									<option>离退休人员</option>
+									<option>其他</option>
+								</select>
+							</td>
+						</tr>
+					</table>	
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="box3">
+					<table width="90%" border="0" align="center" cellpadding="0" cellspacing="2">
+						<tr>
+							<td colspan="3" align="center" height="50"><span style="font-size:24px;font-weight: bold;">其他个人信息</span></td>
+						</tr>
+						<tr>
+							<td width="20%" height="50" align="right">头像：</td>
+							<td><input type="file" class="inputfile" name="photo"/></td>
+						</tr>
+						<tr>
+							<td width="20%" height="50" align="right">爱好：</td>
+							<td>
+								<label><input type="checkbox" name="hobby"/>运动</label>
+								<label><input type="checkbox" name="hobby"/>乐器</label>
+								<label><input type="checkbox" name="hobby"/>唱歌</label>
+								<label><input type="checkbox" name="hobby"/>绘画</label>
+								<label><input type="checkbox" name="hobby"/>摄影</label>
+								<label><input type="checkbox" name="hobby"/>其他</label>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%" height="50" align="right" valign="top">个人简介：</td>
+							<td><textarea cols="50" rows="5" wrap="physical"></textarea></td>
+				        </tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="box4">
+					<table width="90%" border="0" align="center" cellpadding="0" cellspacing="2">
+						<tr>
+							<td colspan="2">
+								<p style="font-size:18px;text-align:justify;"><b>本站承诺将严格保密个人信息，不将个人信息用于商业目的，保护个人数据免受侵犯！</b></p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="left"><input type="checkbox" name="clause"/>我已阅读并信任上述条款</td>
+						</tr>
+						<tr>
+							<td align="right"><input type="submit" class="btns" value="注册账户"/></td>
+							<td><input type="reset" class="btnr" value="重新填写" onmouseup="location.reload()"/></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+	</form>
+</div>
+</body>
+</html>
